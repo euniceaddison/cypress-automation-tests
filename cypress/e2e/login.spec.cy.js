@@ -13,7 +13,7 @@ describe('Login Flow Test', () => {
     // Click the submit button
     cy.get('button[type="submit"]').first().click();
 
-    // ✅ Wait for and check the shopping cart/dashboard text
+    //  Wait for and check the shopping cart/dashboard text
     cy.contains('SHOPPING CART', { timeout: 10000 }).should('be.visible');
   });
 });
